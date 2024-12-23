@@ -1,21 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.h1 {
+  font-size: 46px;
+  font-weight: bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.h2 {
+  font-size: 37px;
+  font-weight: bold;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.h3 {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.h5 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.body-large {
+  font-size: 16px;
+}
+
+.body-large-bold {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.body-medium {
+  font-size: 14px;
+}
+
+.body-medium-bold {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.body-small {
+  font-size: 12px;
+}
+
+.body-small-bold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.button-light {
+  padding: 10px 40px;
+  background-color: white;
+  color: #0e0e0e;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.button-light:hover {
+  background-color: #e31837;
+  color: white;
+}
+
+.button-dark {
+  padding: 10px 40px;
+  background-color: #0e0e0e;
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.button-dark:hover {
+  background-color: #e31837;
+  color: white;
+}
+
+.main-section {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../assets/main-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  background-image: url("../assets/about-img.jpg");
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 50;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
 }

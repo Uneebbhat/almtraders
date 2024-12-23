@@ -1,0 +1,55 @@
+import React from "react";
+import Container from "../Container";
+import aboutUs from "@/assets/about-img.jpg";
+
+const Page = () => {
+  return (
+    <>
+      <section className="py-10 md:py-16">
+        <Container>
+          <div>
+            <h2 className="text-center text-2xl md:text-3xl font-bold text-black">
+              About Us
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-8 md:gap-16">
+              {/* Left Section (Image as Background) */}
+              <div className="w-full h-64 md:h-auto about bg-cover bg-center rounded-lg shadow-lg"></div>
+
+              {/* Right Section (Content) */}
+              <div className="flex flex-col justify-center">
+                <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
+                  About AlmTraders
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                  At ALM Traders, we live and breathe gaming. Our passion for
+                  cutting-edge technology and the gaming experience drives us to
+                  create the most powerful, customizable, and reliable gaming
+                  computers on the market. Whether you’re a casual gamer, a
+                  competitive eSports player, or a professional streamer, we
+                  have the perfect rig to elevate your game.
+                </p>
+                <br />
+                <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
+                  Our Story
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                  ALM Traders began as a small team of dedicated gamers and tech
+                  enthusiasts with a shared dream: to build the best gaming
+                  systems available. Frustrated with the limitations of
+                  mass-produced PCs, we set out to design and build custom
+                  gaming computers that offer unrivaled performance, stunning
+                  aesthetics, and exceptional value.
+                </p>
+                <button className="mt-6 button-dark">
+                  Learn more about us
+                </button>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+};
+
+export default Page;
