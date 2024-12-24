@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@/components/Container";
-import logo from "@/assets/logo.png";
+import logo from "../../public/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 

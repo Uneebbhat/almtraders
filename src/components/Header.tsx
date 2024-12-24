@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Container from "./Container";
 import Image from "next/image";
-import logo from "../assets/logo.png";
+import logo from "../../public/assets/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

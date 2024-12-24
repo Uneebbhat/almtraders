@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import whatsapp from "@/assets/whatsapp.png";
+import whatsapp from "../../public/assets/whatsapp.png";
 import Link from "next/link";
 
 const WhatsAppButton = () => {

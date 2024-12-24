@@ -97,14 +97,14 @@
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0)
     ),
-    url("../assets/main-img.jpg");
+    url("/assets/main-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .about {
-  background-image: url("../assets/about-img.jpg");
+  background-image: url("/assets/about-img.jpg");
 }
 
 .whatsapp-button {
