@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "@/components/Container";
+import Link from "next/link";
 
 const NeedAssistance = () => {
   return (
@@ -17,7 +18,16 @@ const NeedAssistance = () => {
                 <br />
                 products or services. We're here to help!
               </p>
-              <button className="button-dark">Chat with Us on WhatsApp</button>
+              <Link
+                href="https://wa.me/+447300019359"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with us on WhatsApp"
+              >
+                <button className="button-dark">
+                  Chat with Us on WhatsApp
+                </button>
+              </Link>
             </div>
           </div>
         </Container>
