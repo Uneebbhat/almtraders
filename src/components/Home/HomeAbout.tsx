@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../Container";
-import aboutUs from "@/assets/about-img.jpg";
 
 const Page = () => {
   return (
@@ -12,10 +11,7 @@ const Page = () => {
               About Us
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-8 md:gap-16">
-              {/* Left Section (Image as Background) */}
               <div className="w-full h-64 md:h-auto about bg-cover bg-center rounded-lg shadow-lg"></div>
-
-              {/* Right Section (Content) */}
               <div className="flex flex-col justify-center">
                 <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">
                   About AlmTraders
