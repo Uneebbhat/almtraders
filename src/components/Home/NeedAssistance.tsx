@@ -16,7 +16,7 @@ const NeedAssistance = () => {
                 Feel free to reach out to us via WhatsApp for any queries about
                 our
                 <br />
-                products or services. We're here to help!
+                products or services. We&apos;re here to help!
               </p>
               <Link
                 href="https://wa.me/+447300019359"

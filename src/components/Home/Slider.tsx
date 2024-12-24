@@ -130,15 +130,11 @@ const Page = () => {
       <div
         className="swiper-button-prev"
         onClick={() => swiperRef.current?.slidePrev()}
-      >
-        {/* &lt; */}
-      </div>
+      ></div>
       <div
         className="swiper-button-next "
         onClick={() => swiperRef.current?.slideNext()}
-      >
-        {/* &gt; */}
-      </div>
+      ></div>
     </div>
   );
 };
