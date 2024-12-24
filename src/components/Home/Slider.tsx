@@ -4,6 +4,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import Image from "next/image";
+import AOS from "aos";
 
 import slider1 from "../../../public/assets/slider1.jpeg";
 import slider2 from "../../../public/assets/slider2.jpeg";
@@ -47,7 +48,11 @@ const images = [
 
 const Slider = () => {
   return (
-    <div className="relative w-full max-w-5xl mx-auto">
+    <div
+      className="relative w-full max-w-5xl mx-auto"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
       <Swiper
         spaceBetween={0}
         slidesPerView={1}

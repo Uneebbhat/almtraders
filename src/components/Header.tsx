@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header>
+    <header className="relative z-50  bg-black">
       <Container>
         <div className="flex justify-between items-center py-[15px] relative z-50">
           <div>
@@ -34,7 +34,7 @@ const Header = () => {
                 className={`${
                   pathName === route.path
                     ? "text-red underline font-semibold"
-                    : "text-black hover:text-red hover:underline font-semibold transition-all"
+                    : "text-white hover:text-red hover:underline font-semibold transition-all"
                 }`}
               >
                 {route.label}

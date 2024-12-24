@@ -47,47 +47,56 @@ const images = [
   { src: slider37, alt: "Almtraders" },
 ];
 
-const SliderTwo = () => {
+const SliderTwo = ({
+  "data-aos": dataAos,
+  "data-aos-delay": dataAosDelay,
+}: any) => {
   return (
-    <Swiper
-      spaceBetween={0}
-      slidesPerView={1}
-      centeredSlides={true}
-      loop
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay]}
-      breakpoints={{
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-        },
-        620: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-      }}
-      className="custom-slider"
+    <div
+      className="slider-container"
+      data-aos={dataAos}
+      data-aos-delay={dataAosDelay}
     >
-      {images.map((image, index) => (
-        <SwiperSlide key={index}>
-          <div className="relative w-full h-[350px] md:h-[300px]">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              layout="fill"
-              className="rounded-xl shadow-lg object-auto w-full"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      <Swiper
+        spaceBetween={0}
+        slidesPerView={1}
+        centeredSlides={true}
+        loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          620: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+        }}
+        className="custom-slider"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative w-full h-[350px] md:h-[300px]">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                layout="fill"
+                className="rounded-xl shadow-lg object-auto w-full"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
