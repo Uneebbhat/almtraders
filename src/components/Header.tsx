@@ -45,13 +45,13 @@ const Header = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-black focus:outline-none"
+              className="text-white focus:outline-none"
             >
               {isMenuOpen ? (
                 <svg
                   className="w-6 h-6"
                   fill="none"
-                  stroke="#000000"
+                  stroke="#ffffff"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -87,7 +87,7 @@ const Header = () => {
             isMenuOpen
               ? "top-[60px] opacity-100"
               : "-top-full opacity-0 z-40 py-8 shadow-lg"
-          } md:hidden absolute left-0 w-full bg-white text-black flex flex-col items-center gap-6 mt-6 transition-all duration-300 ease-in-out transform z-40 py-8`}
+          } md:hidden absolute left-0 w-full bg-black text-white flex flex-col items-center gap-6 mt-6 transition-all duration-300 ease-in-out transform z-40 py-8`}
           style={{
             transform: isMenuOpen ? "translateY(0)" : "translateY(-100%)",
           }}
@@ -99,7 +99,7 @@ const Header = () => {
               className={`${
                 pathName === route.path
                   ? "text-red underline font-semibold"
-                  : "text-black hover:text-red hover:underline hover:scale-105 transition-all duration-200 ease-in-out"
+                  : "text-white hover:text-red hover:underline hover:scale-105 transition-all duration-200 ease-in-out"
               } text-lg`}
               onClick={() => setIsMenuOpen(false)}
             >

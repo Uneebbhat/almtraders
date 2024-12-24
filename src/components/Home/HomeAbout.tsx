@@ -1,10 +1,30 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Page = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    // Set initial screen size
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 768); // 768px is typically considered mobile screen size
+    };
+
+    // Check screen size on component mount
+    checkScreenSize();
+
+    // Add resize event listener to handle screen size change
+    window.addEventListener("resize", checkScreenSize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -33,14 +53,18 @@ const Page = () => {
               About Us
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-8 md:gap-16">
-              <div
-                className="w-full h-64 md:h-auto about bg-cover bg-center rounded-lg shadow-lg"
-                data-aos="fade-right"
+              <video
+                src="/assets/video3.mp4"
+                loop
+                controls
+                autoPlay
+                style={{ height: "700px" }}
+                data-aos={isSmallScreen ? "fade-up" : "fade-right"}
                 data-aos-delay="300"
-              ></div>
+              ></video>
               <div
                 className="flex flex-col justify-center"
-                data-aos="fade-left"
+                data-aos={isSmallScreen ? "fade-up" : "fade-left"}
                 data-aos-delay="300"
               >
                 <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
