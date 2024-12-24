@@ -92,7 +92,7 @@
 }
 
 .main-section {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0)
@@ -100,7 +100,7 @@
     url("/assets/main-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 .about {
@@ -126,4 +126,25 @@
 
 .whatsapp-button:hover {
   background-color: #1ebe5d;
+}
+
+.custom-slider .swiper-slide {
+  transform: scale(0.9); /* Reduce size for perspective */
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-slider .swiper-slide-active {
+  transform: scale(1); /* Highlight the active slide */
+}
+
+.custom-slider .swiper-slide {
+  z-index: 1;
+}
+
+.custom-slider .swiper-slide-active {
+  z-index: 2; /* Bring the active slide to the front */
+}
+
+.custom-slider .swiper-wrapper {
+  align-items: center; /* Center slides vertically */
 }

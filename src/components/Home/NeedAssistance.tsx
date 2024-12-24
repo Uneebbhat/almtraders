@@ -7,12 +7,12 @@ const NeedAssistance = () => {
     <>
       <section className="py-[40px] bg-lightGray text-center">
         <Container>
-          <div className="flex flex-col gap-[40px]">
+          <div className="flex flex-col gap-[20px] md:gap-[40px]">
             <div>
-              <h2 className="h2 text-black">Need assistance?</h2>
+              <h2 className="h3 md:h2 text-black">Need assistance?</h2>
             </div>
             <div>
-              <p className="mb-4">
+              <p className="mb-4 body-small md:body-medium">
                 Feel free to reach out to us via WhatsApp for any queries about
                 our
                 <br />
@@ -24,7 +24,7 @@ const NeedAssistance = () => {
                 rel="noopener noreferrer"
                 aria-label="Chat with us on WhatsApp"
               >
-                <button className="button-dark">
+                <button className="button-dark body-small md:body-medium">
                   Chat with Us on WhatsApp
                 </button>
               </Link>

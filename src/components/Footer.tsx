@@ -37,30 +37,17 @@ const Footer = () => {
                 />
               </div>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <nav className="flex flex-col gap-4">
-                {routes.map((route) => (
-                  <Link
-                    key={route.path}
-                    href={route.path}
-                    className="hover:text-red-500 hover:underline transition-all text-sm"
-                  >
-                    {route.label}
-                  </Link>
-                ))}
-              </nav>
-              <div>
-                <h5 className="text-lg font-semibold">Locations</h5>
-                <p className="text-sm mt-4 leading-relaxed">
-                  📍 Molanwar Chung, Main GT Multan Road, Lahore, Pakistan
-                  <br />
-                  📍 Sharjah, UAE, Industrial Area 2
-                  <br />
-                  📍 Unit A, 10 Crossfield Road, Kitts Green, Birmingham B33 9HP
-                </p>
-              </div>
-            </div>
+            <nav className="flex flex-col gap-4">
+              {routes.map((route) => (
+                <Link
+                  key={route.path}
+                  href={route.path}
+                  className="hover:text-red hover:underline transition-all text-sm inline text-left md:text-right"
+                >
+                  {route.label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
           <div className="mt-8 text-center text-xs text-gray-400">

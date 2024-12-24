@@ -3,19 +3,20 @@ import HomeAbout from "@/components/Home/HomeAbout";
 import MainSection from "@/components/Home/MainSection";
 import NeedAssistance from "@/components/Home/NeedAssistance";
 import Slider from "@/components/Home/Slider";
+import SliderTwo from "@/components/Home/SliderTwo";
 import Videos from "@/components/Home/Videos";
 
 export default function Home() {
   return (
     <>
       <MainSection />
-      <Container>
-        <div className="py-[40px]">
-          <Slider />
-        </div>
-      </Container>
-      <Videos />
       <HomeAbout />
+      <div className="py-[40px]">
+        <Container>
+          <h3 className="h3 md:h2 text-center mb-4">Our Featured Products</h3>
+          <SliderTwo />
+        </Container>
+      </div>
       <NeedAssistance />
     </>
   );

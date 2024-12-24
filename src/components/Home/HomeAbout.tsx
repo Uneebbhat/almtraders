@@ -4,7 +4,7 @@ import Container from "../Container";
 const Page = () => {
   return (
     <>
-      <section className="py-10 md:py-16">
+      <section className="py-10 md:py-16 bg-lightGray">
         <Container>
           <div>
             <h2 className="text-center text-2xl md:text-3xl font-bold text-black">

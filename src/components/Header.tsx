@@ -17,9 +17,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-black">
+    <header>
       <Container>
-        <div className="flex justify-between items-center py-[15px] relative z-20">
+        <div className="flex justify-between items-center py-[15px] relative z-50">
           <div>
             <Link href="/">
               <Image src={logo} width={60} height={60} alt="Almtraders" />
@@ -33,8 +33,8 @@ const Header = () => {
                 href={route.path}
                 className={`${
                   pathName === route.path
-                    ? "text-red underline"
-                    : "text-white hover:text-red hover:underline transition-all"
+                    ? "text-red underline font-semibold"
+                    : "text-black hover:text-red hover:underline font-semibold transition-all"
                 }`}
               >
                 {route.label}
@@ -45,13 +45,13 @@ const Header = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white focus:outline-none"
+              className="text-black focus:outline-none"
             >
               {isMenuOpen ? (
                 <svg
                   className="w-6 h-6"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="#000000"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -84,8 +84,13 @@ const Header = () => {
 
         <div
           className={`${
-            isMenuOpen ? "top-[78px] opacity-100" : "-top-[100%] opacity-0"
-          } md:hidden absolute left-0 w-full bg-black py-4 text-white flex flex-col items-center gap-4 mt-4 transition-all duration-400 ease-linear`}
+            isMenuOpen
+              ? "top-[60px] opacity-100"
+              : "-top-full opacity-0 z-40 py-8 shadow-lg"
+          } md:hidden absolute left-0 w-full bg-white text-black flex flex-col items-center gap-6 mt-6 transition-all duration-300 ease-in-out transform z-40 py-8`}
+          style={{
+            transform: isMenuOpen ? "translateY(0)" : "translateY(-100%)",
+          }}
         >
           {routes.map((route) => (
             <Link
@@ -93,9 +98,9 @@ const Header = () => {
               href={route.path}
               className={`${
                 pathName === route.path
-                  ? "text-red underline"
-                  : "hover:text-red hover:underline transition-all"
-              }`}
+                  ? "text-red underline font-semibold"
+                  : "text-black hover:text-red hover:underline hover:scale-105 transition-all duration-200 ease-in-out"
+              } text-lg`}
               onClick={() => setIsMenuOpen(false)}
             >
               {route.label}
