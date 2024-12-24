@@ -47,10 +47,15 @@ const images = [
   { src: slider37, alt: "Almtraders" },
 ];
 
+interface AOSInterface {
+  "data-aos": string;
+  "data-aos-delay": string;
+}
+
 const SliderTwo = ({
   "data-aos": dataAos,
   "data-aos-delay": dataAosDelay,
-}: any) => {
+}: AOSInterface) => {
   return (
     <div
       className="slider-container"
