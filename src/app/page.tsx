@@ -2,9 +2,7 @@ import Container from "@/components/Container";
 import HomeAbout from "@/components/Home/HomeAbout";
 import MainSection from "@/components/Home/MainSection";
 import NeedAssistance from "@/components/Home/NeedAssistance";
-import Slider from "@/components/Home/Slider";
 import SliderTwo from "@/components/Home/SliderTwo";
-import Videos from "@/components/Home/Videos";
 
 export default function Home() {
   return (
