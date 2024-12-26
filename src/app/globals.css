@@ -114,7 +114,7 @@
 }
 
 .about-section-whole-selling {
-  background-image: url("/assets/company1.jpeg");
+  background-image: url("/assets/company4.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -123,7 +123,7 @@
 }
 
 .about-section-retail {
-  background-image: url("/assets/company3.jpeg");
+  background-image: url("/assets/whole-selling.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -132,7 +132,7 @@
 }
 
 .about-section-corperate {
-  background-image: url("/assets/corperate.jpg");
+  background-image: url("/assets/company3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
