@@ -1,12 +1,34 @@
-import React from "react";
-import Container from "../Container";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Container from "@/components/Container";
 
 const OurHistory = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: "ease-in-out",
+      once: false,
+      offset: 100,
+    });
+
+    window.addEventListener("scroll", () => AOS.refresh());
+
+    return () => {
+      window.removeEventListener("scroll", () => AOS.refresh());
+    };
+  }, []);
+
   return (
     <>
       <section className="py-[40px] bg-black text-white">
         <Container>
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex mb-8">
+          <div
+            className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="about-section-img w-1/4"></div>
             <div className="about-data w-full">
               <h2 className="h2">Our History</h2>
@@ -32,7 +54,11 @@ const OurHistory = () => {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-16 about-flex mb-8">
+          <div
+            className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-16 about-flex mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="about-data w-full">
               <h2 className="h2">Wholesale Buying and Selling</h2>
               <p>
@@ -49,7 +75,11 @@ const OurHistory = () => {
             <div className="about-section-whole-selling w-1/4"></div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex mb-8">
+          <div
+            className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="about-section-retail w-1/4"></div>
             <div className="about-data w-full">
               <h2 className="h2">Retail Excellence</h2>
@@ -66,7 +96,11 @@ const OurHistory = () => {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-16 about-flex mb-8">
+          <div
+            className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-16 about-flex mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="about-data w-full">
               <h2 className="h2">Corporate Services</h2>
               <p>
@@ -83,7 +117,11 @@ const OurHistory = () => {
             <div className="about-section-corperate w-1/4"></div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex">
+          <div
+            className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div className="about-section-future-tech w-1/4"></div>
             <div className="about-data w-full">
               <h2 className="h2">Driving the Future of Technology</h2>
