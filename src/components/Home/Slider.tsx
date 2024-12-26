@@ -4,7 +4,6 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import Image from "next/image";
-
 import slider1 from "../../../public/assets/slider1.jpeg";
 import slider2 from "../../../public/assets/slider2.jpeg";
 import slider3 from "../../../public/assets/slider3.jpeg";

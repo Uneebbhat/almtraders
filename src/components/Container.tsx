@@ -6,7 +6,7 @@ interface ContainerInterface {
 
 const Container = ({ children }: ContainerInterface) => {
   return (
-    <div className="mx-auto max-w-[1500px] px-[40px] md:px-[120px]">
+    <div className="mx-auto max-w-[1500px] px-[20px] md:px-[120px]">
       {children}
     </div>
   );

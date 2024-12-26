@@ -1,9 +1,12 @@
+import AboutMain from "@/components/About/AboutMain";
+import OurHistory from "@/components/About/OurHistory";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <h1>about page</h1>
+      <AboutMain />
+      <OurHistory />
     </>
   );
 };

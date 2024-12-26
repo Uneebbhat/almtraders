@@ -91,16 +91,62 @@
   color: white;
 }
 
-.main-section {
-  /* background-image: linear-gradient(
+.about-main-section {
+  background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.3)
     ),
-    url("/assets/main-img.jpg");
+    url("/assets/about2.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.about-section-img {
+  background-image: url("/assets/about1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+}
+
+.about-section-whole-selling {
+  background-image: url("/assets/company1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+}
+
+.about-section-retail {
+  background-image: url("/assets/company3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+}
+
+.about-section-corperate {
+  background-image: url("/assets/corperate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+}
+
+.about-section-future-tech {
+  background-image: url("/assets/future-tech.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  width: 100%;
+  height: 500px;
 }
 
 .about {

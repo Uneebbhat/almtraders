@@ -3,23 +3,17 @@ import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Page = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
-    // Set initial screen size
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 768); // 768px is typically considered mobile screen size
+      setIsSmallScreen(window.innerWidth <= 768);
     };
-
-    // Check screen size on component mount
     checkScreenSize();
-
-    // Add resize event listener to handle screen size change
     window.addEventListener("resize", checkScreenSize);
-
-    // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", checkScreenSize);
     };
@@ -52,7 +46,7 @@ const Page = () => {
             >
               About Us
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-8 md:gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-4 md:gap-16">
               <video
                 src="/assets/video3.mp4"
                 loop
@@ -90,9 +84,11 @@ const Page = () => {
                   gaming computers that offer unrivaled performance, stunning
                   aesthetics, and exceptional value.
                 </p>
-                <button className="mt-6 button-light">
-                  Learn more about us
-                </button>
+                <Link href="/about">
+                  <button className="mt-6 button-light w-full">
+                    Learn more about us
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
