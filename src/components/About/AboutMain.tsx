@@ -30,11 +30,11 @@ const AboutMain = () => {
             data-aos-delay="100"
           >
             <h2 className="h3 md:h1 lg:text-[52px] mb-4 text-white">
-              Wholesalers, Retailers, Corporate, and Exporters
+              Empowering Your Tech Business
             </h2>
             <h6 className="h6">
-              Discover a Wide Range of Laptops, Computers, Accessories, and Tech
-              Components
+              Discover Innovative Solutions in Laptops, Computers, and Tech
+              Accessories for Every Need
             </h6>
           </div>
         </Container>

@@ -24,8 +24,7 @@ const MainSection = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Discover <span className="text-red underline">Top-Quality</span>{" "}
-              Laptops <br /> & Accessories
+              Wholesalers, Retailers, Corporate, and Exporters
             </h1>
 
             <Slider data-aos="fade-up" data-aos-delay="500" />
@@ -34,7 +33,8 @@ const MainSection = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Browse through our premium collection.
+              Discover a Wide Range of Laptops, Computers, Accessories, and Tech
+              Components
             </p>
             <button
               className="button-light body-medium"
