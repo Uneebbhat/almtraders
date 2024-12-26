@@ -73,7 +73,7 @@ const OurHistory = () => {
                 distributor into one of the largest wholesale suppliers in the
                 industry. Our journey began by distributing early computing
                 devices like the Pentium series and storage devices, and over
-                time, we've expanded our portfolio to include the latest
+                time, we&apos;ve expanded our portfolio to include the latest
                 laptops, computers, and tech accessories. Our commitment to
                 wholesale excellence has solidified our reputation as a global
                 leader in tech distribution.
