@@ -27,14 +27,16 @@ const Footer = () => {
 
             <div className="flex justify-center md:justify-center">
               <div className="w-24 h-24">
-                <Image
-                  src={logo}
-                  alt="Almtrader"
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  className="rounded-full object-contain"
-                />
+                <Link href="/">
+                  <Image
+                    src={logo}
+                    alt="Almtrader"
+                    layout="responsive"
+                    width={100}
+                    height={100}
+                    className="rounded-full object-contain"
+                  />
+                </Link>
               </div>
             </div>
             <nav className="flex flex-col gap-4">
