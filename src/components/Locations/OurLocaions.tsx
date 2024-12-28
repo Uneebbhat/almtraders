@@ -32,6 +32,7 @@ const OurLocaions = () => {
               >
                 Visit Website
               </Link>
+              <LocationSlider />
             </div>
 
             <div className="border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
@@ -116,7 +117,6 @@ const OurLocaions = () => {
                 >
                   Visit Wholesale Website
                 </Link>
-                <LocationSlider />
               </div>
 
               <div className="company-card border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
