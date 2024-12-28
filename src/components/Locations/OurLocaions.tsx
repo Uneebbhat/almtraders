@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Slider from "../Home/Slider";
+import LocationSlider from "./LocationSlider";
 
 const OurLocaions = () => {
   return (
@@ -26,12 +27,11 @@ const OurLocaions = () => {
                 services that support growth and success.
               </p>
               <Link
-                href="/"
+                href="https://find-and-update.company-information.service.gov.uk/company/10041873"
                 className="text-blue-500 hover:underline font-medium"
               >
                 Visit Website
               </Link>
-              <Slider />
             </div>
 
             <div className="border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
@@ -48,12 +48,42 @@ const OurLocaions = () => {
                 service to clients across various industries.
               </p>
               <Link
-                href="/"
+                href="https://find-and-update.company-information.service.gov.uk/company/10569888"
                 className="text-blue-500 hover:underline font-medium"
               >
                 Visit Website
               </Link>
               <Slider />
+            </div>
+          </div>
+
+          <div className="locations-section mt-8">
+            <h2 className="text-2xl font-bold mb-6">In UAE 🇦🇪</h2>
+
+            <div className="company-card border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-xl font-semibold mb-2">
+                Golden Gulf Electronics
+              </h3>
+              <p className="text-white mb-4">
+                Golden Gulf Electronics stands as a cornerstone in the UAE's
+                tech industry, offering premium electronic devices and tech
+                products to businesses across the region. With a reputation for
+                quality and reliability, we serve a wide range of clients,
+                providing solutions that meet their unique technological needs.
+              </p>
+              <p className="text-white mb-4">
+                Partnering with ALM Micros (UK) and ALM Traders (Pakistan),
+                Golden Gulf Electronics is part of a global network dedicated to
+                excellence in technology distribution and innovation.
+              </p>
+              <a
+                href="https://pcexporters.com/golden-gulf-line-elect-devices-tr-llc-u-a-e/14515"
+                className="text-blue-500 hover:underline font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Company Website
+              </a>
             </div>
           </div>
 
@@ -80,12 +110,12 @@ const OurLocaions = () => {
                   competitive prices.
                 </p>
                 <Link
-                  href="/"
+                  href="https://www.urdupoint.com/business/directory/detail/alm-traders-79746.html"
                   className="text-blue-500 hover:underline font-medium"
                 >
                   Visit Wholesale Website
                 </Link>
-                <Slider />
+                <LocationSlider />
               </div>
 
               <div className="company-card border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
