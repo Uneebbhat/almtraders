@@ -65,11 +65,12 @@ const OurLocaions = () => {
                 Golden Gulf Electronics
               </h3>
               <p className="text-white mb-4">
-                Golden Gulf Electronics stands as a cornerstone in the UAE's
-                tech industry, offering premium electronic devices and tech
-                products to businesses across the region. With a reputation for
-                quality and reliability, we serve a wide range of clients,
-                providing solutions that meet their unique technological needs.
+                Golden Gulf Electronics stands as a cornerstone in the
+                UAE&apos;s tech industry, offering premium electronic devices
+                and tech products to businesses across the region. With a
+                reputation for quality and reliability, we serve a wide range of
+                clients, providing solutions that meet their unique
+                technological needs.
               </p>
               <p className="text-white mb-4">
                 Partnering with ALM Micros (UK) and ALM Traders (Pakistan),
