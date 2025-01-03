@@ -23,12 +23,6 @@ const users = [
     role: "Directors",
   },
   { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
-  { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
-  { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
-  { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
-  { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
-  { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
-  { name: "Omar Malik", email: "info@almtrading.biz", role: "Directors" },
 ];
 
 const ContactUsers = () => {
