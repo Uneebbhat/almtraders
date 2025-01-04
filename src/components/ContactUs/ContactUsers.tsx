@@ -37,7 +37,7 @@ const ContactUsers = () => {
       {/* Section for Founders */}
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-center mb-4">
-          Founders and CEO's
+          Founders and CEO&apos;s
         </h2>
         <div className="flex flex-wrap justify-center gap-6">
           {founders.map((user, i) => (
