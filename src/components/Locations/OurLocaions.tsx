@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Slider from "../Home/Slider";
 import LocationSlider from "./LocationSlider";
+import PakistanSlider from "./PakistanSlider";
 
 const OurLocaions = () => {
   return (
@@ -16,15 +17,15 @@ const OurLocaions = () => {
               <p className="text-white mb-4">
                 ALM Micros drives technology innovation and offers cutting-edge
                 solutions tailored to the modern business world. As a key player
-                in ALM’s global network, we collaborate with international
+                in ALM&apos;s global network, we collaborate with international
                 partners to bring exceptional products and services to our
                 clients.
               </p>
               <p className="text-white mb-4">
                 With strong connections to subsidiaries like ALM Traders in
-                Pakistan and Golden Gulf Electronics in the UAE, we provide
-                businesses with seamless access to the latest tech products and
-                services that support growth and success.
+                Pakistan and Golden Gulf line Elect.Devices TR LLC in the UAE,
+                we provide businesses with seamless access to the latest tech
+                products and services that support growth and success.
               </p>
               <Link
                 href="https://find-and-update.company-information.service.gov.uk/company/10041873"
@@ -63,20 +64,21 @@ const OurLocaions = () => {
 
             <div className="company-card border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-semibold mb-2">
-                Golden Gulf Electronics
+                Golden Gulf line Elect.Devices TR LLC
               </h3>
               <p className="text-white mb-4">
-                Golden Gulf Electronics stands as a cornerstone in the
-                UAE&apos;s tech industry, offering premium electronic devices
-                and tech products to businesses across the region. With a
-                reputation for quality and reliability, we serve a wide range of
-                clients, providing solutions that meet their unique
+                Golden Gulf line Elect.Devices TR LLC stands as a cornerstone in
+                the UAE&apos;s tech industry, offering premium electronic
+                devices and tech products to businesses across the region. With
+                a reputation for quality and reliability, we serve a wide range
+                of clients, providing solutions that meet their unique
                 technological needs.
               </p>
               <p className="text-white mb-4">
                 Partnering with ALM Micros (UK) and ALM Traders (Pakistan),
-                Golden Gulf Electronics is part of a global network dedicated to
-                excellence in technology distribution and innovation.
+                Golden Gulf line Elect.Devices TR LLC is part of a global
+                network dedicated to excellence in technology distribution and
+                innovation.
               </p>
               <a
                 href="https://pcexporters.com/golden-gulf-line-elect-devices-tr-llc-u-a-e/14515"
@@ -100,16 +102,16 @@ const OurLocaions = () => {
                 </h3>
                 <p className="text-white mb-4">
                   With over 30 years of industry experience, ALM Traders has
-                  become one of Pakistan’s most trusted and prominent wholesale
-                  distributors. Specializing in high-quality tech products, we
-                  cater to businesses globally, ensuring reliable and
-                  cost-effective solutions.
+                  become one of Pakistan&apos;s most trusted and prominent
+                  wholesale distributors. Specializing in high-quality tech
+                  products, we cater to businesses globally, ensuring reliable
+                  and cost-effective solutions.
                 </p>
                 <p className="text-white mb-4">
                   Our global network, including partnerships with ALM Micros
-                  (UK) and Golden Gulf Electronics (UAE), strengthens our
-                  ability to offer cutting-edge technology products at
-                  competitive prices.
+                  (UK) and Golden Gulf line Elect.Devices TR LLC (UAE),
+                  strengthens our ability to offer cutting-edge technology
+                  products at competitive prices.
                 </p>
                 <Link
                   href="https://www.urdupoint.com/business/directory/detail/alm-traders-79746.html"
@@ -117,6 +119,7 @@ const OurLocaions = () => {
                 >
                   Visit Wholesale Website
                 </Link>
+                <PakistanSlider />
               </div>
 
               <div className="company-card border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
@@ -140,7 +143,7 @@ const OurLocaions = () => {
                 >
                   Visit Retail Website
                 </Link>
-                <Slider />
+                <PakistanSlider />
               </div>
             </div>
           </div>
@@ -163,22 +166,14 @@ const OurLocaions = () => {
                   is set to become a leader in the tech space, offering scalable
                   solutions that empower businesses globally.
                 </p>
-                <Link
-                  href="/"
-                  className="text-blue-500 hover:underline font-medium"
-                >
-                  Learn More
-                </Link>
               </div>
-
-              {/* ALM Technologies */}
               <div className="company-card border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
                 <h3 className="text-xl font-semibold mb-2">ALM Technologies</h3>
                 <p className="text-white mb-4">
-                  ALM Technologies is all about pushing the boundaries of what’s
-                  possible with technology. As we prepare to launch, our mission
-                  is to develop cutting-edge solutions that drive digital
-                  transformation for businesses worldwide.
+                  ALM Technologies is all about pushing the boundaries of
+                  what&apos;s possible with technology. As we prepare to launch,
+                  our mission is to develop cutting-edge solutions that drive
+                  digital transformation for businesses worldwide.
                 </p>
                 <p className="text-white mb-4">
                   Focused on technological advancements, ALM Technologies will
@@ -186,12 +181,6 @@ const OurLocaions = () => {
                   businesses scale efficiently and stay ahead in the fast-paced
                   digital economy.
                 </p>
-                <Link
-                  href="/"
-                  className="text-blue-500 hover:underline font-medium"
-                >
-                  Discover More
-                </Link>
               </div>
             </div>
           </div>
