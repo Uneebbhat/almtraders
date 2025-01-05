@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import Slider from "../Home/Slider";
-import LocationSlider from "./LocationSlider";
-import PakistanSlider from "./PakistanSlider";
+import LocationSlider from "@/components/Locations/LocationSlider";
+import PakistanSlider from "@/components/Locations/PakistanSlider";
 
 const OurLocaions = () => {
   return (
