@@ -55,7 +55,7 @@ const OurLocaions = () => {
               >
                 Visit Website
               </Link>
-              <Slider />
+              <LocationSlider />
             </div>
           </div>
 
