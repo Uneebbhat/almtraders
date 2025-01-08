@@ -49,11 +49,13 @@ const OurHistory = () => {
               <p>
                 As a proud subsidiary of{" "}
                 <span className="font-bold">ALM Micros</span> in the UK and{" "}
-                <span className="font-bold">Golden Gulf Electronics</span> in
-                the UAE, ALM Traders is part of a vast network of tech leaders.
-                Our strong relationships with suppliers and clients enable us to
-                offer reliable, scalable, and cost-effective solutions to
-                businesses everywhere.
+                <span className="font-bold">
+                  Golden Gulf line Elect.Devices TR LLC
+                </span>{" "}
+                in the UAE, ALM Traders is part of a vast network of tech
+                leaders. Our strong relationships with suppliers and clients
+                enable us to offer reliable, scalable, and cost-effective
+                solutions to businesses everywhere.
               </p>
             </div>
             <div className="about-section-whole-selling w-1/4"></div>
@@ -83,8 +85,10 @@ const OurHistory = () => {
                 Today, we serve businesses across various sectors, providing
                 bulk supplies and tailored tech solutions. As a subsidiary of{" "}
                 <span className="font-bold">ALM Micros</span> in the UK and{" "}
-                <span className="font-bold">Golden Gulf Electronics</span> in
-                the UAE, we are proud to be part of a powerful international
+                <span className="font-bold">
+                  Golden Gulf line Elect.Devices TR LLC
+                </span>{" "}
+                in the UAE, we are proud to be part of a powerful international
                 network focused on technology innovation.
               </p>
             </div>

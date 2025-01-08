@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const users = [
   {
     name: "Farrukh Jabbar Malik",
@@ -46,11 +48,10 @@ const ContactUsers = () => {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "url('https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    "url('https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg')",
                 }}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75"></div>
-              {/* Content Section */}
               <div className="absolute bottom-0 w-full bg-gradient-to-t from-gray-900 via-gray-800 to-transparent text-white p-4">
                 <h3 className="text-lg font-bold mb-1">{user.name}</h3>
                 <p className="text-sm font-medium">{user.role}</p>
@@ -69,12 +70,11 @@ const ContactUsers = () => {
               className="relative w-[280px] h-[320px] rounded-lg shadow-lg overflow-hidden bg-white hover:scale-105 transition-transform duration-300"
               key={i}
             >
-              
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "url('https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    "url('https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg')",
                 }}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75"></div>
@@ -86,6 +86,43 @@ const ContactUsers = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="mt-12 p-8 bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+        <h2 className="text-2xl font-extrabold mb-6 tracking-wide">
+          📞 For Wholesale Buying and Selling
+        </h2>
+        <div className="space-y-4">
+          <p className="text-lg">
+            Contact:{" "}
+            <Link
+              href="mailto:shehzadwasemm55@gmail.com"
+              className="text-blue-400 font-semibold hover:text-blue-500 transition-colors duration-200"
+            >
+              shehzadwasemm55@gmail.com
+            </Link>
+          </p>
+          <p className="text-lg font-medium">
+            📱 Phone:{" "}
+            <span className="font-bold text-blue-400">0324 4444999</span>
+          </p>
+          <p className="text-lg font-medium">
+            💬 WhatsApp:{" "}
+            <Link
+              href="https://wa.me/+447300019359"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+            >
+              <span className="font-bold text-blue-400">07300 019359</span>
+            </Link>
+          </p>
+        </div>
+        {/* <div className="mt-6">
+          <button className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300">
+            Contact Us Now
+          </button>
+        </div> */}
       </div>
     </div>
   );

@@ -20,8 +20,31 @@ const Footer = () => {
             <div>
               <h5 className="text-lg font-semibold">About us</h5>
               <p className="text-sm mt-4 leading-relaxed">
-                Our passion drives us to create the most powerful and reliable
-                gaming computers on the market.
+                <span className="font-bold text-lg">
+                  Interested in Wholesale Buying and Selling?
+                </span>
+                <br />
+                📞 Call us at:{" "}
+                <span className="text-blue-400 font-bold">
+                  0324-444-4499
+                </span>{" "}
+                or{" "}
+                <Link
+                  href="https://wa.me/+447300019359"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat with us on WhatsApp"
+                >
+                  <span className="font-bold text-blue-400">07300 019359</span>
+                </Link>
+                <br />
+                ✉️ Email us at:{" "}
+                <Link
+                  href="mailto:shehzadwasemm55@gmail.com"
+                  className="text-blue-400 font-semibold hover:text-blue-500 transition-colors duration-200"
+                >
+                  shehzadwasemm55@gmail.com
+                </Link>
               </p>
             </div>
 
