@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import OurLocaions from "@/components/Locations/OurLocaions";
+import OurLocaions from "@/components/Our-Companies/OurLocaions";
 import React from "react";
 
 const page = () => {
