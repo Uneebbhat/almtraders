@@ -32,7 +32,7 @@ const OurLocaions = () => {
               >
                 Visit Website
               </Link>
-              <LocationSlider />
+              {/* <LocationSlider /> */}
             </div>
 
             <div className="border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">

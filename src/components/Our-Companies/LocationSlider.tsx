@@ -8,14 +8,14 @@ import company1 from "../../../public/assets/company1.jpeg";
 import company2 from "../../../public/assets/company2.jpeg";
 import company3 from "../../../public/assets/company3.jpeg";
 import company5 from "../../../public/assets/company5.jpeg";
-import company6 from "../../../public/assets/company6.jpeg";
+// import company6 from "../../../public/assets/company6.jpeg";
 
 const images = [
   { src: company1, alt: "Almtraders" },
   { src: company2, alt: "Almtraders" },
   { src: company3, alt: "Almtraders" },
   { src: company5, alt: "Almtraders" },
-  { src: company6, alt: "Almtraders" },
+  // { src: company6, alt: "Almtraders" },
 ];
 
 const LocationSlider = () => {

@@ -4,6 +4,11 @@ import React, { useEffect } from "react";
 import { Mail } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import Image from "next/image";
 
 const ContactUsers = () => {
   useEffect(() => {
@@ -41,13 +46,6 @@ const ContactUsers = () => {
       role: "Directors",
     },
   ];
-
-  const founders = users.filter((user) =>
-    user.role.toLowerCase().includes("founder")
-  );
-  const directors = users.filter((user) =>
-    user.role.toLowerCase().includes("director")
-  );
 
   return (
     <div>
@@ -89,7 +87,6 @@ const ContactUsers = () => {
         <h2 className="text-2xl font-semibold mb-4" data-aos="fade-up">
           Get in Touch with Us
         </h2>
-
         <p
           className="text-white mb-8 max-w-2xl"
           data-aos="fade-up"
@@ -100,77 +97,51 @@ const ContactUsers = () => {
           is here to help.
         </p>
 
-        {/* Founders Section */}
-        <div className="mb-12">
-          <h3 className="text-xl font-semibold mb-6" data-aos="fade-up">
-            Founders
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {founders.map((user, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-2xl font-bold text-blue-600">
-                    {user.name.charAt(0)}
-                  </span>
+        {/* Swiper Slider */}
+        <Swiper
+          modules={[Pagination]}
+          slidesPerView={1}
+          spaceBetween={20}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {users.map((user, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px] group hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-3/5">
+                  <Image
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LXNJFTmLzCoExghcATlCWG85kI8dsnhJng&s"
+                    alt={user.name}
+                    className="w-full h-full object-cover"
+                    width={100}
+                    height={100}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                <h4 className="text-lg font-semibold text-center mb-2">
-                  {user.name}
-                </h4>
-                <p className="text-gray-600 text-center mb-3">{user.role}</p>
-                <div className="flex items-center justify-center space-x-2 text-blue-600">
-                  <Mail size={18} />
-                  <a
-                    href={`mailto:${user.email}`}
-                    className="text-sm hover:underline"
-                  >
-                    {user.email}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Directors Section */}
-        <div>
-          <h3 className="text-xl font-semibold mb-6" data-aos="fade-up">
-            Directors
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {directors.map((user, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <span className="text-2xl font-bold text-green-600">
-                    {user.name.charAt(0)}
-                  </span>
-                </div>
-                <h4 className="text-lg font-semibold text-center mb-2">
-                  {user.name}
-                </h4>
-                <p className="text-gray-600 text-center mb-3">{user.role}</p>
-                <div className="flex items-center justify-center space-x-2 text-green-600">
-                  <Mail size={18} />
-                  <a
-                    href={`mailto:${user.email}`}
-                    className="text-sm hover:underline"
-                  >
-                    {user.email}
-                  </a>
+                <div className="p-4 text-center">
+                  <h4 className="h4 font-bold">{user.name}</h4>
+                  <p className="text-sm text-gray-500">{user.role}</p>
+                  <div className="flex items-center justify-center mt-4 space-x-2 text-blue-600">
+                    <Mail size={16} />
+                    <a
+                      href={`mailto:${user.email}`}
+                      className="text-sm hover:underline"
+                    >
+                      {user.email}
+                    </a>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

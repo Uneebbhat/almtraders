@@ -7,6 +7,7 @@ import SliderTwo from "@/components/Home/SliderTwo";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CompanyLogoSlider from "@/components/Home/CompanyLogoSlider";
 
 export default function Home() {
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function Home() {
           <SliderTwo data-aos="fade-up" data-aos-delay="500" />
         </Container>
       </div>
+      <CompanyLogoSlider />
       <NeedAssistance />
     </>
   );

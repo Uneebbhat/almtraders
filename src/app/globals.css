@@ -194,3 +194,29 @@
 .custom-slider .swiper-wrapper {
   align-items: center; /* Center slides vertically */
 }
+
+.slider {
+  display: flex;
+  animation: slide 15s linear infinite;
+}
+
+.slider-item {
+  flex-shrink: 0;
+  width: 100px;
+  margin: 0 60px;
+}
+
+.slider-image {
+  width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) invert(100%) brightness(100%) contrast(100%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
