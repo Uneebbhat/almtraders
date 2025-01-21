@@ -3,6 +3,7 @@ import React from "react";
 // import LocationSlider from "@/components/Our-Companies/LocationSlider";
 import PakistanSlider from "@/components/Our-Companies/PakistanSlider";
 import RetailSlider from "@/components/Our-Companies/RetailSlider";
+import MicroSlider from "./MicroSlider";
 
 const OurLocaions = () => {
   return (
@@ -34,6 +35,7 @@ const OurLocaions = () => {
                 Visit Website
               </Link>
               {/* <LocationSlider /> */}
+              <MicroSlider />
             </div>
 
             {/* <div className="border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
@@ -107,12 +109,12 @@ const OurLocaions = () => {
                   products, we cater to businesses globally, ensuring reliable
                   and cost-effective solutions.
                 </p>
-                <p className="text-white mb-4">
+                {/* <p className="text-white mb-4">
                   Our global network, including partnerships with ALM Micros
                   (UK) and Golden Gulf line Elect.Devices TR LLC (UAE),
                   strengthens our ability to offer cutting-edge technology
                   products at competitive prices.
-                </p>
+                </p> */}
                 <Link
                   href="https://www.urdupoint.com/business/directory/detail/alm-traders-79746.html"
                   className="text-blue-500 hover:underline font-medium"

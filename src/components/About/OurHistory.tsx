@@ -46,7 +46,7 @@ const OurHistory = () => {
                 bring exceptional products at competitive prices.
               </p>
               <br />
-              <p>
+              {/* <p>
                 As a proud subsidiary of{" "}
                 <span className="font-bold">ALM Micros</span> in the UK and{" "}
                 <span className="font-bold">
@@ -56,7 +56,7 @@ const OurHistory = () => {
                 leaders. Our strong relationships with suppliers and clients
                 enable us to offer reliable, scalable, and cost-effective
                 solutions to businesses everywhere.
-              </p>
+              </p> */}
             </div>
             <div className="about-section-whole-selling w-1/4"></div>
           </div>
