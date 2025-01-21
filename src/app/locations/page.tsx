@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Container from "@/components/Container";
-import { Building2, MapPin, Store, Rocket } from "lucide-react";
+import { Building2, MapPin, Store } from "lucide-react";
 import PakistanSlider from "@/components/Our-Companies/PakistanSlider";
-import RetailSlider from "@/components/Our-Companies/RetailSlider";
+// import RetailSlider from "@/components/Our-Companies/RetailSlider";
 
 interface LocationCardProps {
   title: string;
