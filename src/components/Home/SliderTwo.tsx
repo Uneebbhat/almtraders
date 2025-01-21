@@ -24,6 +24,12 @@ import slider34 from "../../../public/assets/slider34.jpeg";
 import slider35 from "../../../public/assets/slider35.jpeg";
 import slider36 from "../../../public/assets/slider36.jpeg";
 import slider37 from "../../../public/assets/slider37.jpeg";
+import slider38 from "../../../public/assets/slider37.jpeg";
+import slider39 from "../../../public/assets/slider37.jpeg";
+import slider40 from "../../../public/assets/slider37.jpeg";
+import slider41 from "../../../public/assets/slider37.jpeg";
+import slider42 from "../../../public/assets/slider37.jpeg";
+import slider43 from "../../../public/assets/slider37.jpeg";
 
 const images = [
   { src: slider19, alt: "Almtraders" },
@@ -45,6 +51,12 @@ const images = [
   { src: slider35, alt: "Almtraders" },
   { src: slider36, alt: "Almtraders" },
   { src: slider37, alt: "Almtraders" },
+  { src: slider38, alt: "Almtraders" },
+  { src: slider39, alt: "Almtraders" },
+  { src: slider40, alt: "Almtraders" },
+  { src: slider41, alt: "Almtraders" },
+  { src: slider42, alt: "Almtraders" },
+  { src: slider43, alt: "Almtraders" },
 ];
 
 interface AOSInterface {
