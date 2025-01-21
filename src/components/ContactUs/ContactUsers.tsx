@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { Mail } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -35,15 +34,19 @@ const ContactUsers = () => {
       email: "shakeelmalik_2009@hotmail.com",
       role: "Founder and CEO",
     },
+  ];
+
+  const directors = [
     {
       name: "Shahzad Waseem Malik",
-      email: "shehzadwaseem55@gmail.com",
-      role: "Directors",
+      email: "info@almtraders.com",
+      contact: "+44 07300 019359",
+      role: "Director",
     },
     {
-      name: "Omar Malik",
+      name: "Umer Malik",
       email: "info@almtrading.biz",
-      role: "Directors",
+      role: "Director",
     },
   ];
 
@@ -114,7 +117,7 @@ const ContactUsers = () => {
         >
           {users.map((user, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-[400px] group hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] group hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-3/5">
                   <Image
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LXNJFTmLzCoExghcATlCWG85kI8dsnhJng&s"
@@ -123,20 +126,55 @@ const ContactUsers = () => {
                     width={100}
                     height={100}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-4 text-center">
-                  <h4 className="h4 font-bold">{user.name}</h4>
-                  <p className="text-sm text-gray-500">{user.role}</p>
-                  <div className="flex items-center justify-center mt-4 space-x-2 text-blue-600">
-                    <Mail size={16} />
-                    <a
-                      href={`mailto:${user.email}`}
-                      className="text-sm hover:underline"
-                    >
-                      {user.email}
-                    </a>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <p className="text-white font-semibold text-lg text-center px-2">
+                      {user.role}
+                    </p>
                   </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4 className="text-lg font-bold mb-2 text-gray-800 group-hover:text-blue-600">
+                    {user.name}
+                  </h4>
+                  <p className="text-sm text-gray-600 mb-4">{user.role}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+
+          {/* Director Slides */}
+          {directors.map((director, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] group hover:shadow-2xl transition-shadow duration-300">
+                <div className="relative h-3/5">
+                  <Image
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LXNJFTmLzCoExghcATlCWG85kI8dsnhJng&s"
+                    alt={director.name}
+                    className="w-full h-full object-cover"
+                    width={100}
+                    height={100}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <p className="text-white font-semibold text-lg text-center px-2">
+                      {director.role}
+                    </p>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4 className="text-lg font-bold mb-2 text-gray-800 group-hover:text-blue-600">
+                    {director.name}
+                  </h4>
+                  <p className="text-sm text-gray-600 mb-4">{director.role}</p>
+                  {director.email && (
+                    <p className="text-sm text-gray-600">
+                      Email: {director.email}
+                    </p>
+                  )}
+                  {director.contact && (
+                    <p className="text-sm text-gray-600">
+                      Contact: {director.contact}
+                    </p>
+                  )}
                 </div>
               </div>
             </SwiperSlide>
