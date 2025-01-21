@@ -21,12 +21,12 @@ const OurLocaions = () => {
                 partners to bring exceptional products and services to our
                 clients.
               </p>
-              <p className="text-white mb-4">
+              {/* <p className="text-white mb-4">
                 With strong connections to subsidiaries like ALM Traders in
                 Pakistan and Golden Gulf line Elect.Devices TR LLC in the UAE,
                 we provide businesses with seamless access to the latest tech
                 products and services that support growth and success.
-              </p>
+              </p> */}
               <Link
                 href="https://find-and-update.company-information.service.gov.uk/company/10041873"
                 className="text-blue-500 hover:underline font-medium"
