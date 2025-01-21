@@ -68,7 +68,7 @@ const services: Service[] = [
 
 interface ServiceCardProps {
   title: string;
-  Icon: React.ComponentType<any>;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   description: string;
 }
 
