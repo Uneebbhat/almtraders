@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const logos = [
   { name: "HP", image: "/assets/hp.png" },
@@ -14,6 +14,33 @@ const logos = [
 ];
 
 const CompanyLogoSlider = () => {
+  useEffect(() => {
+    // Add the animation styles dynamically only on the client
+    const style = document.createElement("style");
+    style.textContent = `
+      @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+      }
+      @keyframes marquee2 {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(0%); }
+      }
+      .animate-marquee {
+        animation: marquee 25s linear infinite;
+      }
+      .animate-marquee2 {
+        animation: marquee2 25s linear infinite;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      // Clean up the style tag on component unmount
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <div className="py-16 bg-black">
       <div className="relative flex overflow-x-hidden">
@@ -51,25 +78,5 @@ const CompanyLogoSlider = () => {
     </div>
   );
 };
-
-// Add these animations to your tailwind.config.js
-const style = document.createElement("style");
-style.textContent = `
-  @keyframes marquee {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-  }
-  @keyframes marquee2 {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(0%); }
-  }
-  .animate-marquee {
-    animation: marquee 25s linear infinite;
-  }
-  .animate-marquee2 {
-    animation: marquee2 25s linear infinite;
-  }
-`;
-document.head.appendChild(style);
 
 export default CompanyLogoSlider;
