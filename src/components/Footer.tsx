@@ -25,7 +25,7 @@ const Footer = () => {
                 </span>
                 <br />
                 📞 Call us at:{" "}
-                <span className="text-blue-400 font-bold">
+                <span className="text-blue-400 font-bold hover:text-blue-500 transition-colors duration-200">
                   0324-444-4499
                 </span>{" "}
                 or{" "}
@@ -35,15 +35,17 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="Chat with us on WhatsApp"
                 >
-                  <span className="font-bold text-blue-400">07300 019359</span>
+                  <span className="font-bold text-blue-400 hover:text-blue-500 transition-colors duration-200">
+                    +447300 019359
+                  </span>
                 </Link>
                 <br />
                 ✉️ Email us at:{" "}
                 <Link
-                  href="mailto:shehzadwasemm55@gmail.com"
+                  href="mailto:info@almtraders.org"
                   className="text-blue-400 font-semibold hover:text-blue-500 transition-colors duration-200"
                 >
-                  shehzadwasemm55@gmail.com
+                  info@almtraders.org
                 </Link>
               </p>
             </div>
@@ -67,7 +69,7 @@ const Footer = () => {
                 <Link
                   key={route.path}
                   href={route.path}
-                  className="hover:text-red hover:underline transition-all text-sm inline text-left md:text-right"
+                  className="hover:text-red transition-all text-sm inline text-left md:text-right"
                 >
                   {route.label}
                 </Link>

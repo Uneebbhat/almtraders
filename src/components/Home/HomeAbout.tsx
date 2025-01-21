@@ -65,25 +65,35 @@ const Page = () => {
                   About AlmTraders
                 </h3>
                 <p className="text-base md:text-lg leading-relaxed text-white">
-                  At ALM Traders, we live and breathe gaming. Our passion for
-                  cutting-edge technology and the gaming experience drives us to
-                  create the most powerful, customizable, and reliable gaming
-                  computers on the market. Whether you’re a casual gamer, a
-                  competitive eSports player, or a professional streamer, we
-                  have the perfect rig to elevate your game.
+                  At ALM Traders, we specialize in wholesale import and export
+                  of IT products. Our dedication to sourcing high-quality
+                  products and ensuring seamless logistics allows us to meet the
+                  diverse needs of businesses worldwide.
                 </p>
                 <br />
                 <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
                   Our Story
                 </h3>
                 <p className="text-base md:text-lg leading-relaxed text-white">
-                  ALM Traders began as a small team of dedicated gamers and tech
-                  enthusiasts with a shared dream: to build the best gaming
-                  systems available. Frustrated with the limitations of
-                  mass-produced PCs, we set out to design and build custom
-                  gaming computers that offer unrivaled performance, stunning
-                  aesthetics, and exceptional value.
+                  ALM Traders started as a small team of entrepreneurs
+                  passionate about global trade and building strong partnerships
+                  In the sector of IT business Driven by the vision to Provide
+                  market with the high end possible IT Products, Known for our
+                  wholesale network and Commitments. We are Still in IT business
+                  from last 30 years, making us unique and one of the most
+                  trustable Company across the Globe.
                 </p>
+
+                <div className="text-white mt-4">
+                  <h5 className="h5">What We Do?</h5>
+                  <ul className="ml-4">
+                    <li>1. We buy in wholesale Bulk Quantity</li>
+                    <li>2. We sell in Wholesale Bulk Quantity</li>
+                    <li>3. We Export Via Shipping</li>
+                    <li>4. We Export Via air cargo </li>
+                  </ul>
+                </div>
+
                 <Link href="/about">
                   <button className="mt-6 button-light w-full">
                     Learn more about us

@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* overflow-x: hidden; */
+}
+
 .h1 {
   font-size: 46px;
   font-weight: bold;
@@ -195,9 +199,10 @@
   align-items: center; /* Center slides vertically */
 }
 
-.slider {
+/* .slider {
   display: flex;
   animation: slide 15s linear infinite;
+  width: calc(200%);
 }
 
 .slider-item {
@@ -208,6 +213,7 @@
 
 .slider-image {
   width: 100%;
+  aspect-ratio: 3/5;
   object-fit: contain;
   filter: grayscale(100%) invert(100%) brightness(100%) contrast(100%);
 }
@@ -219,4 +225,4 @@
   100% {
     transform: translateX(-50%);
   }
-}
+} */

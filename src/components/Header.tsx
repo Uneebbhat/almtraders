@@ -34,8 +34,8 @@ const Header = () => {
                 href={route.path}
                 className={`${
                   pathName === route.path
-                    ? "text-red underline font-semibold"
-                    : "text-white hover:text-red hover:underline font-semibold transition-all"
+                    ? "text-red font-semibold"
+                    : "text-white hover:text-red font-semibold transition-all"
                 }`}
               >
                 {route.label}

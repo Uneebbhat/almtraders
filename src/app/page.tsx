@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CompanyLogoSlider from "@/components/Home/CompanyLogoSlider";
+import WeDealIn from "@/components/Home/WeDealIn";
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function Home() {
     <>
       <MainSection />
       <HomeAbout />
+      <WeDealIn />
       <div className="py-[40px] bg-black text-white">
         <Container>
           <h3
@@ -36,7 +38,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Our Featured Products
+            Products We Deal In
           </h3>
           <SliderTwo data-aos="fade-up" data-aos-delay="500" />
         </Container>

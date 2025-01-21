@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import LocationSlider from "@/components/Our-Companies/LocationSlider";
+// import LocationSlider from "@/components/Our-Companies/LocationSlider";
 import PakistanSlider from "@/components/Our-Companies/PakistanSlider";
+import RetailSlider from "@/components/Our-Companies/RetailSlider";
 
 const OurLocaions = () => {
   return (
@@ -35,7 +36,7 @@ const OurLocaions = () => {
               {/* <LocationSlider /> */}
             </div>
 
-            <div className="border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            {/* <div className="border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-semibold mb-2">ALM Tradings</h3>
               <p className="text-white mb-4">
                 ALM Tradings, located in Birmingham, offers trusted trading and
@@ -55,7 +56,7 @@ const OurLocaions = () => {
                 Visit Website
               </Link>
               <LocationSlider />
-            </div>
+            </div> */}
           </div>
 
           <div className="locations-section mt-8">
@@ -142,7 +143,7 @@ const OurLocaions = () => {
                 >
                   Visit Retail Website
                 </Link>
-                <PakistanSlider />
+                <RetailSlider />
               </div>
             </div>
           </div>
