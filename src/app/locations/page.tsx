@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Container from "@/components/Container";
 import { Building2, MapPin, Store } from "lucide-react";
-import PakistanSlider from "@/components/Our-Companies/PakistanSlider";
+// import PakistanSlider from "@/components/Our-Companies/PakistanSlider";
 // import RetailSlider from "@/components/Our-Companies/RetailSlider";
 
 interface LocationCardProps {
@@ -63,7 +63,7 @@ const OurLocations = () => {
           </div>
 
           {/* UK Section */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <h2 className="text-2xl font-bold flex items-center gap-2">
               <MapPin className="w-6 h-6 text-blue-400" />
               In the UK – Birmingham 🇬🇧
@@ -75,7 +75,7 @@ const OurLocations = () => {
               ]}
               icon={<Building2 className="w-6 h-6 text-blue-400" />}
             />
-          </div>
+          </div> */}
 
           {/* UAE Section */}
           <div className="space-y-6">
@@ -102,7 +102,7 @@ const OurLocations = () => {
                 "Chung Molanwar, Multan Road Thokar Niaz Baig, Lahore, Pakistan",
               ]}
               icon={<Building2 className="w-6 h-6 text-blue-400" />}
-              slider={<PakistanSlider />}
+              // slider={<PakistanSlider />}
             />
 
             {/* Retail Shops Section */}
