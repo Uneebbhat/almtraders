@@ -63,19 +63,19 @@ const OurLocations = () => {
           </div>
 
           {/* UK Section */}
-          {/* <div className="space-y-6">
+          <div className="space-y-6">
             <h2 className="text-2xl font-bold flex items-center gap-2">
               <MapPin className="w-6 h-6 text-blue-400" />
               In the UK – Birmingham 🇬🇧
             </h2>
             <LocationCard
-              title="ALM Micros and ALM Tradings"
+              title="ALM Micros"
               description={[
                 "Unit A, 10 Crossfield Road, Kitts Green, Birmingham B33 9HP",
               ]}
               icon={<Building2 className="w-6 h-6 text-blue-400" />}
             />
-          </div> */}
+          </div>
 
           {/* UAE Section */}
           <div className="space-y-6">

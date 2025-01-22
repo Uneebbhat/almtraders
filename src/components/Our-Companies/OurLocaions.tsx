@@ -76,12 +76,12 @@ const OurLocaions = () => {
                 of clients, providing solutions that meet their unique
                 technological needs.
               </p>
-              <p className="text-white mb-4">
+              {/* <p className="text-white mb-4">
                 Partnering with ALM Micros (UK) and ALM Traders (Pakistan),
                 Golden Gulf line Elect.Devices TR LLC is part of a global
                 network dedicated to excellence in technology distribution and
                 innovation.
-              </p>
+              </p> */}
               <a
                 href="https://pcexporters.com/golden-gulf-line-elect-devices-tr-llc-u-a-e/14515"
                 className="text-blue-500 hover:underline font-medium"

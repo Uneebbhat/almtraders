@@ -95,9 +95,9 @@ const ContactUsers = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          We would love to hear from you! Whether you have a question about our
-          products, need technical support, or you want to say hello, our team
-          is here to help.
+          For any product-related enquiries, pricing information, or assistance
+          with your orders, please reach out Via email and Business WhatsApp for
+          Quick Response
         </p>
 
         {/* Swiper Slider */}

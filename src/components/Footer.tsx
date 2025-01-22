@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import logo from "../../public/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 
 const Footer = () => {
   const routes = [
@@ -48,6 +49,21 @@ const Footer = () => {
                   info@almtraders.org
                 </Link>
               </p>
+              <div className="mt-2">
+                <Link
+                  href={
+                    "https://pk.linkedin.com/in/shahzad-waseem-malik-935004266"
+                  }
+                  target="_blank"
+                >
+                  <Image
+                    src={"/assets/linkedin.png"}
+                    alt="Linkedin"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+              </div>
             </div>
 
             <div className="flex justify-center md:justify-center">
