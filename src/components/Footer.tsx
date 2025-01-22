@@ -3,7 +3,6 @@ import Container from "@/components/Container";
 import logo from "../../public/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
 
 const Footer = () => {
   const routes = [
