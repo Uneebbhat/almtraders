@@ -12,7 +12,6 @@ const images = [
   { src: lahore1, alt: "Almtraders" },
   { src: lahore2, alt: "Almtraders" },
   { src: lahore3, alt: "Almtraders" },
-  { src: lahore1, alt: "Almtraders" },
 ];
 
 const PakistanSlider = () => {
@@ -38,7 +37,7 @@ const PakistanSlider = () => {
             spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 0,
           },
           620: {

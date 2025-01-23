@@ -33,13 +33,13 @@ export default function Home() {
       <WeDealIn />
       <div className="py-[40px] bg-black text-white">
         <Container>
-          <h3
+          {/* <h3
             className="h3 md:h2 text-center mb-4"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             Products We Deal In
-          </h3>
+          </h3> */}
           <SliderTwo data-aos="fade-up" data-aos-delay="500" />
         </Container>
       </div>

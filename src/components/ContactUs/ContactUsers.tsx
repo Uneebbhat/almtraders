@@ -8,6 +8,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContactUsers = () => {
   useEffect(() => {
@@ -42,7 +43,9 @@ const ContactUsers = () => {
       email: "info@almtraders.com",
       contact: "+44 07300 019359",
       role: "Director",
+      icon: "/assets/linkedin.png",
     },
+
     {
       name: "Umer Malik",
       email: "info@almtrading.biz",
@@ -118,7 +121,7 @@ const ContactUsers = () => {
           {users.map((user, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] group hover:shadow-2xl transition-shadow duration-300">
-                <div className="relative h-3/5">
+                <div className="relative h-3/6">
                   <Image
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LXNJFTmLzCoExghcATlCWG85kI8dsnhJng&s"
                     alt={user.name}
@@ -146,7 +149,7 @@ const ContactUsers = () => {
           {directors.map((director, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] group hover:shadow-2xl transition-shadow duration-300">
-                <div className="relative h-3/5">
+                <div className="relative h-3/6">
                   <Image
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LXNJFTmLzCoExghcATlCWG85kI8dsnhJng&s"
                     alt={director.name}
@@ -160,7 +163,7 @@ const ContactUsers = () => {
                     </p>
                   </div>
                 </div>
-                <div className="p-6 text-center">
+                <div className="p-6 text-center flex flex-col items-center justify-center">
                   <h4 className="text-lg font-bold mb-2 text-gray-800 group-hover:text-blue-600">
                     {director.name}
                   </h4>
@@ -175,7 +178,22 @@ const ContactUsers = () => {
                       Contact: {director.contact}
                     </p>
                   )}
+                  <Link
+                    href={
+                      "https://pk.linkedin.com/in/shahzad-waseem-malik-935004266"
+                    }
+                    target="_blank"
+                  >
+                    <Image
+                      src={director.icon as string}
+                      alt="Linkedin"
+                      width={25}
+                      height={25}
+                      className="my-4"
+                    />
+                  </Link>
                 </div>
+                <div></div>
               </div>
             </SwiperSlide>
           ))}

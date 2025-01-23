@@ -25,10 +25,6 @@ const Footer = () => {
                 </span>
                 <br />
                 📞 Call us at:{" "}
-                <span className="text-blue-400 font-bold hover:text-blue-500 transition-colors duration-200">
-                  0324-444-4499
-                </span>{" "}
-                or{" "}
                 <Link
                   href="https://wa.me/+447300019359"
                   target="_blank"
@@ -48,21 +44,6 @@ const Footer = () => {
                   info@almtraders.org
                 </Link>
               </p>
-              <div className="mt-2">
-                <Link
-                  href={
-                    "https://pk.linkedin.com/in/shahzad-waseem-malik-935004266"
-                  }
-                  target="_blank"
-                >
-                  <Image
-                    src={"/assets/linkedin.png"}
-                    alt="Linkedin"
-                    width={25}
-                    height={25}
-                  />
-                </Link>
-              </div>
             </div>
 
             <div className="flex justify-center md:justify-center">
