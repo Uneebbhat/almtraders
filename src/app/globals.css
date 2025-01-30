@@ -101,7 +101,7 @@
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.3)
     ),
-    url("/assets/about-img.jpg");
+    url("/assets/about-img.jpeg");
   background-repeat: no-repeat;
   background-size: auto;
   background-size: cover;
@@ -118,7 +118,7 @@
 }
 
 .about-section-whole-selling {
-  background-image: url("/assets/company4.jpeg");
+  background-image: url("/assets/leading-wholesale.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -136,7 +136,7 @@
 }
 
 .about-section-corperate {
-  background-image: url("/assets/company3.jpeg");
+  background-image: url("/assets/empowring.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -145,7 +145,7 @@
 }
 
 .about-section-future-tech {
-  background-image: url("/assets/future-tech.jpg");
+  background-image: url("/assets/future-tech-img.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -226,3 +226,44 @@
     transform: translateX(-50%);
   }
 } */
+.our-company-img {
+  position: relative;
+  background-image: url("/assets/our-com-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+}
+
+.our-company-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.our-locations-img {
+  position: relative;
+  background-image: url("/assets/location-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+}
+
+.our-locations-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}

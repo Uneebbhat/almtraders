@@ -67,7 +67,6 @@ const OurHistory = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="about-section-img w-1/4"></div>
             <div className="about-data w-full">
               <h2 className="h2">Our Journey as Wholesale Leaders</h2>
               <p>
@@ -123,7 +122,19 @@ const OurHistory = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="about-section-retail w-1/4"></div>
+            <div className="w-1/2">
+              <video
+                className="w-full h-full object-cover rounded-lg"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src="/assets/video3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            {/* <div className="about-section-retail w-1/4"></div> */}
             <div className="about-data w-full">
               <h2 className="h2">Retail for Broader Reach</h2>
               <p>
