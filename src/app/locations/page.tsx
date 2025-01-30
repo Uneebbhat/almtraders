@@ -52,21 +52,18 @@ const OurLocations = () => {
     <section className="py-10 md:py-16 bg-black text-white">
       <div className="relative">
         <div className="our-locations-img w-full h-[400px]"></div>
-        <h2 className="text-3xl md:text-4xl font-bold text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-          Our Global Presence
-        </h2>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center space-y-4 z-10">
+          <h1 className="text-3xl md:text-4xl font-bold">
+            Our Global Presence
+          </h1>
+          <p className="text-white max-w-2xl mx-auto">
+            Discover our network of companies across the UK, UAE, and Pakistan
+          </p>
+        </div>
       </div>
       <Container>
         <div className="space-y-12 mt-12">
           {/* Header */}
-          <div className="text-center space-y-4">
-            <h1 className="text-3xl md:text-4xl font-bold">
-              Our Global Presence
-            </h1>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Discover our network of companies across the UK, UAE, and Pakistan
-            </p>
-          </div>
 
           {/* UK Section */}
           <div className="space-y-6">

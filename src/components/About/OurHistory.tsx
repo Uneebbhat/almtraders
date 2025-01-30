@@ -58,7 +58,6 @@ const OurHistory = () => {
                 solutions to businesses everywhere.
               </p> */}
             </div>
-            <div className="about-section-whole-selling w-1/4"></div>
           </div>
 
           {/* Our History Section */}
@@ -67,6 +66,7 @@ const OurHistory = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
+            <div className="about-section-whole-selling w-1/4"></div>
             <div className="about-data w-full">
               <h2 className="h2">Our Journey as Wholesale Leaders</h2>
               <p>
@@ -95,7 +95,7 @@ const OurHistory = () => {
 
           {/* Corporate Services Section */}
           <div
-            className="flex flex-col-reverse md:flex-row items-center gap-4 md:gap-16 about-flex mb-8"
+            className="flex flex-col md:flex-row items-center gap-4 md:gap-16 about-flex mb-8"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -164,7 +164,7 @@ const OurHistory = () => {
                 world.
               </p>
             </div>
-            <div className="about-section-future-tech w-1/4"></div>
+            <div className="about-section-future-tech w-1/2"></div>
           </div>
         </Container>
       </section>
