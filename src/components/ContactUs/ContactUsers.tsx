@@ -20,21 +20,21 @@ const ContactUsers = () => {
   }, []);
 
   const users = [
-    {
-      name: "Farrukh Jabbar Malik",
-      email: "info@almmicros.co.uk",
-      role: "Founder and CEO",
-    },
-    {
-      name: "Waseem Jabbar Malik",
-      email: "wasimjabbar@yahoo.com",
-      role: "Founder and CEO",
-    },
-    {
-      name: "Shakeel Jabbar Malik",
-      email: "shakeelmalik_2009@hotmail.com",
-      role: "Founder and CEO",
-    },
+    // {
+    //   name: "Farrukh Jabbar Malik",
+    //   email: "info@almmicros.co.uk",
+    //   role: "Founder and CEO",
+    // },
+    // {
+    //   name: "Waseem Jabbar Malik",
+    //   email: "wasimjabbar@yahoo.com",
+    //   role: "Founder and CEO",
+    // },
+    // {
+    //   name: "Shakeel Jabbar Malik",
+    //   email: "shakeelmalik_2009@hotmail.com",
+    //   role: "Founder and CEO",
+    // },
   ];
 
   const directors = [
@@ -46,11 +46,11 @@ const ContactUsers = () => {
       icon: "/assets/linkedin.png",
     },
 
-    {
-      name: "Umer Malik",
-      email: "info@almtrading.biz",
-      role: "Director",
-    },
+    // {
+    //   name: "Umer Malik",
+    //   email: "info@almtrading.biz",
+    //   role: "Director",
+    // },
   ];
 
   return (
@@ -118,7 +118,7 @@ const ContactUsers = () => {
             },
           }}
         >
-          {users.map((user, index) => (
+          {/* {users.map((user, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] group hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-3/6">
@@ -143,12 +143,12 @@ const ContactUsers = () => {
                 </div>
               </div>
             </SwiperSlide>
-          ))}
+          ))} */}
 
           {/* Director Slides */}
           {directors.map((director, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] group hover:shadow-2xl transition-shadow duration-300">
+            <div key={index} className="flex items-center justify-center">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden h-[420px] w-[400px] group hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-3/6">
                   <Image
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6LXNJFTmLzCoExghcATlCWG85kI8dsnhJng&s"
@@ -195,7 +195,7 @@ const ContactUsers = () => {
                 </div>
                 <div></div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
         </Swiper>
       </div>
