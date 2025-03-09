@@ -19,23 +19,23 @@ const ContactUsers = () => {
     });
   }, []);
 
-  const users = [
-    // {
-    //   name: "Farrukh Jabbar Malik",
-    //   email: "info@almmicros.co.uk",
-    //   role: "Founder and CEO",
-    // },
-    // {
-    //   name: "Waseem Jabbar Malik",
-    //   email: "wasimjabbar@yahoo.com",
-    //   role: "Founder and CEO",
-    // },
-    // {
-    //   name: "Shakeel Jabbar Malik",
-    //   email: "shakeelmalik_2009@hotmail.com",
-    //   role: "Founder and CEO",
-    // },
-  ];
+  // const users = [
+  //   {
+  //     name: "Farrukh Jabbar Malik",
+  //     email: "info@almmicros.co.uk",
+  //     role: "Founder and CEO",
+  //   },
+  //   {
+  //     name: "Waseem Jabbar Malik",
+  //     email: "wasimjabbar@yahoo.com",
+  //     role: "Founder and CEO",
+  //   },
+  //   {
+  //     name: "Shakeel Jabbar Malik",
+  //     email: "shakeelmalik_2009@hotmail.com",
+  //     role: "Founder and CEO",
+  //   },
+  // ];
 
   const directors = [
     {
