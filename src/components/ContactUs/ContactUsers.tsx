@@ -40,7 +40,7 @@ const ContactUsers = () => {
   const directors = [
     {
       name: "Shahzad Waseem Malik",
-      email: "info@almtraders.com",
+      email: "info@almtraders.org",
       contact: "+44 07300 019359",
       role: "Director",
       icon: "/assets/linkedin.png",
